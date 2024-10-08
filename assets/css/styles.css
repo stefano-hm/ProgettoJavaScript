@@ -1,0 +1,78 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('../images/sfondo1.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;  
+  margin: 0;
+}
+
+.counter-modified {
+  padding: 20px;
+  border-radius: 5px;
+  width: 280px;    
+  text-align: center;
+  background-color: #000; 
+  border: 3px solid #8a2be2; 
+  box-shadow: 
+    0 0 5px #8a2be2,
+    0 0 10px #8a2be2,
+    0 0 15px #8a2be2,
+    0 0 20px #ff00ff,
+    0 0 25px #ff00ff,
+    0 0 30px #ff00ff;
+  color: #fff; 
+}
+
+p {
+  font-size: 22px;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px #97f42d;
+}
+
+h1 {
+  font-size: 38px;
+  color: rgb(86, 216, 241);
+  text-shadow: 0px 0px 8px #2b9ec1;
+
+}
+
+.pulsanti {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #333;
+  font-weight: bold;
+  background-color: #97f42d; 
+  border: 3px solid #cb59cf;
+  box-shadow: 0 0 10px #8a2be2;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.btn:hover {
+  background-color: #93dd3e;
+}
+
+.btn:active {
+  background-color: #97f42d;
+  box-shadow: 0 0 15px #ff00ff;
+}
+
+
+
