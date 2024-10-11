@@ -38,7 +38,7 @@ __CSS__: Lo stile dell'app è gestito tramite il file `styles.css`, che si trova
 __JavaScript__: La logica dell'app è gestita tramite il file `script.js`, situato nella cartella `assets/js`, in particolare:
 * Un contatore (`let a = 0;`) tiene traccia del valore corrente.
 * Due funzioni, `incrementFunction()` e `decrementFunction()`, permettono rispettivamente di incrementare e decrementare il valore del contatore. Queste funzioni aggiornano l'elemento `<h1>` con il nuovo valore ogni volta che vengono chiamate.
-* document.createElement implementano tutti gli elementi del div counter su javascript, in particolare `p` che rappresenta il titolo dell'applicazione e `h1` che è il valore che viene progressivamente modificato ad ogni click su uno dei due pulsanti. Con la stessa logica è stato creato il `div` figlio di `counter`, che ho chiamato `pulsanti`. Quest'ultimo contiene a sua volta i due `button` che servono per incrementare e decrementare il valore di `h1`.
+* `document.createElement` implementano tutti gli elementi del div counter su javascript, in particolare `p` che rappresenta il titolo dell'applicazione e `h1` che è il valore che viene progressivamente modificato ad ogni click su uno dei due pulsanti. Con la stessa logica è stato creato il `div` figlio di `counter`, che ho chiamato `pulsanti`. Quest'ultimo contiene a sua volta i due `button` che servono per incrementare e decrementare il valore di `h1`.
 * Gli eventi `click` sui pulsanti "Increment" e "Decrement" sono gestiti tramite `addEventListener`, collegando le funzioni agli eventi.
 * Utilizzando `setAttribute`, la classe del `div` contenente il contatore viene modificata dinamicamente, permettendo la personalizzazione del layout durante l'interazione.
 ### Funzionamento
