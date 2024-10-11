@@ -31,13 +31,14 @@ Il progetto non richiede l'installazione di dipendenze esterne. Basta aprire il 
 Dopo aver aperto il file index.html nel browser, potrai iniziare a utilizzare l'applicazione per incrementare e decrementare il contatore.
 ## Struttura e funzionamento del progetto
 ### Struttura
-__HTML__: Il contatore è racchiuso in un elemento `div` con la classe `counter`, che contiene un paragrafo con il titolo, un elemento `h1` per visualizzare il valore corrente del contatore, e due pulsanti con le classi `increment` e `decrement`.
+__HTML__: La pagina index.html contiene lo scheletro elementare di qualsiasi pagina html, con la sola aggiunta di un div chiamato "counter" e dei due link che collegano i file css e js.
 
 __CSS__: Lo stile dell'app è gestito tramite il file `styles.css`, che si trova nella cartella `assets/css`. Questo file contiene gli stili per il layout del contatore, il design dei pulsanti e la personalizzazione generale dell'interfaccia. Inoltre, il `div` del contatore utilizza una classe modificata tramite JavaScript (`counter-modified`) per applicare stili dinamici in base all'interazione dell'utente.
 
 __JavaScript__: La logica dell'app è gestita tramite il file `script.js`, situato nella cartella `assets/js`, in particolare:
 * Un contatore (`let a = 0;`) tiene traccia del valore corrente.
 * Due funzioni, `incrementFunction()` e `decrementFunction()`, permettono rispettivamente di incrementare e decrementare il valore del contatore. Queste funzioni aggiornano l'elemento `<h1>` con il nuovo valore ogni volta che vengono chiamate.
+* document.createElement implementano tutti gli elementi del div counter su javascript, in particolare `p` che rappresenta il titolo dell'applicazione e `h1` che è il valore che viene progressivamente modificato ad ogni click su uno dei due pulsanti. Con la stessa logica è stato creato il `div` figlio di `counter`, che ho chiamato `pulsanti`. Quest'ultimo contiene a sua volta i due `button` che servono per incrementare e decrementare il valore di `h1`.
 * Gli eventi `click` sui pulsanti "Increment" e "Decrement" sono gestiti tramite `addEventListener`, collegando le funzioni agli eventi.
 * Utilizzando `setAttribute`, la classe del `div` contenente il contatore viene modificata dinamicamente, permettendo la personalizzazione del layout durante l'interazione.
 ### Funzionamento
